@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TOTO BAR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loginScreen" class="login-container">
+  <h1 class="logo">TOTO BAR</h1>
+
+  <select id="panelSelect">
+    <option value="cliente">Cliente</option>
+    <option value="admin">Admin / Dueño</option>
+    <option value="mozo">Mozo</option>
+    <option value="cocina">Cocina</option>
+  </select>
+
+  <input type="password" id="passwordInput" placeholder="Contraseña (si aplica)">
+  <button id="loginBtn">Entrar</button>
+</div>
+
+<div id="app" style="display:none;">
+  <header>
+    <h1 class="logo-small">TOTO BAR</h1>
+    <button id="logoutBtn">Salir</button>
+  </header>
+
+  <main id="content"></main>
+</div>
+
+<script type="module" src="app.js"></script>
+<audio id="notifSound" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"></audio>
+</body>
+</html>
